@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+  <title>Not Found</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <p class="h3 text-primary">Sorry, page or resource not found</p><br>
+    <span class="label label-success">
+      <a href="{{ url_for('authentication.log_in_user') }}">Back to Login page</a>
+    </span>
+  </div>
+{% endblock %}
